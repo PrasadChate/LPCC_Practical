@@ -1,5 +1,5 @@
 # LPCC_Practice
-** (C)1. Write a program to generate Symbol table of a two-pass Assembler for the given Assembly language source code.**
+**(C)1. Write a program to generate Symbol table of a two-pass Assembler for the given Assembly language source code.**
 
 *INPUT/CODE*
 ```bash
