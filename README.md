@@ -3,7 +3,7 @@
 **(A)2. Write a program to generate Literal table of a two-pass Assembler for the given Assembly language source code.**
 
 *INPUT/CODE*
-```bash
+```Assembly
 	START 100
 READ A
   		READ B
@@ -25,7 +25,7 @@ END
 **(A)3.Write a program to generate Pool table of a two-pass Assembler for the given Assembly language source code.**
 
 *INPUT/CODE*
-```bash
+```Assembly
 START 100
 READ A
    	MOVER AREG, ='1'
@@ -48,7 +48,7 @@ B	DS	1
 **(A)4.Write a program to generate Intermediate code of a two-pass Assembler for the given Assembly language source code.**
 
 *INPUT/CODE*
-```bash
+```Assembly
 START 100
 READ A
 READ B
@@ -62,7 +62,7 @@ B		DS	1
 **(A)5.Write a program to generate Intermediate code of a two-pass Macro processor.**
 
 *INPUT/CODE*
-```bash
+```Assembly
 LOAD A
 MACRO ABC
 LOAD p
@@ -91,7 +91,7 @@ END
 **(A)6.Write a program to generate MDT MNT(Macro Definition Table) of a two-pass Macro processor.**
 
 *INPUT/CODE*
-```bash
+```Assembly
 LOAD A
 STORE B
 MACRO ABC
@@ -144,7 +144,7 @@ w = u*u - u*v+ v*v
 **(B)7.Write a program to generate MDT MNT(Macro Name Table) of a two-pass Macro processor.**
 
 *INPUT/CODE*
-```bash
+```Assembly
 LOAD J
 STORE M
 MACRO EST1
@@ -170,7 +170,7 @@ END
 **(C)1. Write a program to generate Symbol table of a two-pass Assembler for the given Assembly language source code.**
 
 *INPUT/CODE*
-```bash
+```bAssembly
     START 180
     READ M
     READ N
@@ -198,7 +198,7 @@ N	 DS	1
 **(D)5.Write a program to generateIntermediate code of a two-pass Macro processor**
 
 *INPUT/CODE*
-```bash
+```Assembly
 LOAD J
 STORE M
 MACRO EST
