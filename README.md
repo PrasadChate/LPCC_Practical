@@ -2,8 +2,8 @@
 ** (C)1. Write a program to generate Symbol table of a two-pass Assembler for the given Assembly language source code.**
 
 *INPUT/CODE*
-
-    ```START 180
+```bash
+    START 180
     READ M
     READ N
 LOOP	 MOVER AREG, M  
@@ -18,5 +18,4 @@ M	 DS	1
 N	 DS	1
 	 END
 ```
-
 
