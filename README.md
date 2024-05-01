@@ -3,9 +3,9 @@
 
 # To Run the lex files A(8), A(9), D(9), E(9) Run the following commands -
 ```
-$flex file_name.l
-$gcc lex.yy.c
-$a.exe
+$ flex file_name.l
+$ gcc lex.yy.c
+$ a.exe
 ```
 
 **(A)2. Write a program to generate Literal table of a two-pass Assembler for the given Assembly language source code.**
