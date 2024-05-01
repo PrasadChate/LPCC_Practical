@@ -1,51 +1,60 @@
 # LPCC_Practice
 [Click Here to Run Java Codes on GDB Compiler](https://onlinegdb.com/kDMiqPpgx)
 
+# To Run the lex files A(8), A(9), D(9), E(9) Run the following commands -
+```
+$flex file_name.l
+$gcc lex.yy.c
+$a.exe
+```
+
 **(A)2. Write a program to generate Literal table of a two-pass Assembler for the given Assembly language source code.**
 
 *INPUT/CODE*
 ```Assembly
-	START 100
+START 100
 READ A
-  		READ B
-   	MOVER AREG, =’50'
-		MOVER BREG, =’60’
-            ADD AREG, BREG
+READ B
+MOVER AREG, =’50'
+MOVER BREG, =’60’
+ADD AREG, BREG
 LOOP	MOVER CREG, A  
-		ADD  CREG, ='10'
+ADD  CREG, ='10'
 COMP CREG, B
-		BC LT, LOOP
+BC LT, LOOP
 NEXT	SUB AREG, ='10'
 COMP AREG, B 
 BC  GT, NEXT
 STOP
-A		DS	1
-B		DS	1
+A	DS	1
+B	DS	1
 END
 ```
+
 **(A)3.Write a program to generate Pool table of a two-pass Assembler for the given Assembly language source code.**
 
 *INPUT/CODE*
 ```Assembly
 START 100
 READ A
-   	MOVER AREG, ='1'
-		MOVEM AREG, B
+MOVER AREG, ='1'
+MOVEM AREG, B
 MOVER BREG, ='6'
-		ADD AREG, BREG
-		COMP AREG, A
-		BC GT, LAST
-		LTORG 
-   NEXT	SUB AREG, ='1'
-  		MOVER CREG, B  
-		ADD   CREG, ='8'
-            MOVEM CREG, B  
-            PRINT B
-LAST         STOP
+ADD AREG, BREG
+COMP AREG, A
+BC GT, LAST
+LTORG 
+NEXT SUB AREG, ='1'
+MOVER CREG, B  
+ADD   CREG, ='8'
+MOVEM CREG, B  
+PRINT B
+LAST  STOP
 A	DS	1
 B	DS	1
 		END
 ```
+
 **(A)4.Write a program to generate Intermediate code of a two-pass Assembler for the given Assembly language source code.**
 
 *INPUT/CODE*
@@ -53,13 +62,14 @@ B	DS	1
 START 100
 READ A
 READ B
-		MOVER AREG, A
- 	SUB AREG, B
+MOVER AREG, A
+SUB AREG, B
 STOP
-A		DS	1
-B		DS	1
-		END
+A	DS	1
+B	DS	1
+END
 ```
+
 **(A)5.Write a program to generate Intermediate code of a two-pass Macro processor.**
 
 *INPUT/CODE*
@@ -120,6 +130,7 @@ int m=10,n=2,o;
 o = m – n;
 }
 ```
+
 **(A)10.Write a program to evaluate a given arithmetic expression using YACC specification.**
 
 *INPUT*
@@ -171,18 +182,18 @@ END
 **(C)1. Write a program to generate Symbol table of a two-pass Assembler for the given Assembly language source code.**
 
 *INPUT/CODE*
-```bAssembly
-    START 180
-    READ M
-    READ N
-LOOP	 MOVER AREG, M  
-	 MOVER BREG, N  
-    COMP BREG, =’200’ 
-	 BC GT, LOOP
+```Assembly
+START 180
+READ M
+READ N
+LOOP MOVER AREG, M  
+     MOVER BREG, N  
+COMP BREG, =’200’ 
+BC GT, LOOP
 BACK SUB AREG, M
-            COMP AREG, =’500’
-	 BC  LT, BACK 
-    STOP
+COMP AREG, =’500’
+BC  LT, BACK 
+STOP
 M	 DS	1
 N	 DS	1
 	 END
