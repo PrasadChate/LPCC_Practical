@@ -3,7 +3,7 @@
 
 *INPUT/CODE*
 
-`    START 180
+    ```START 180
     READ M
     READ N
 LOOP	 MOVER AREG, M  
@@ -17,6 +17,6 @@ BACK SUB AREG, M
 M	 DS	1
 N	 DS	1
 	 END
-`
+```
 
 
