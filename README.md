@@ -1,5 +1,5 @@
 # LPCC_Practice
-[Java Codes](https://onlinegdb.com/kDMiqPpgx)
+[Click Here to Run Java Codes on GDB Compiler](https://onlinegdb.com/kDMiqPpgx)
 
 **(A)2. Write a program to generate Literal table of a two-pass Assembler for the given Assembly language source code.**
 
