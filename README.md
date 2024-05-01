@@ -52,7 +52,7 @@ PRINT B
 LAST  STOP
 A	DS	1
 B	DS	1
-		END
+END
 ```
 
 **(A)4.Write a program to generate Intermediate code of a two-pass Assembler for the given Assembly language source code.**
@@ -141,10 +141,12 @@ o = m – n;
 **(A)11.Write a program to evaluate a given variable name using YACC specification.**
 
 *INPUT*
+```
 1)	pune
 2)	PUNE
 3)	Pune1
-4)	pUNE_2  
+4)	pUNE_2
+```
 
 **(A)12.Write a program to generate three address code for the given simple expression.**
 
