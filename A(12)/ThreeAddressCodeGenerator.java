@@ -18,12 +18,13 @@ public class ThreeAddressCodeGenerator {
         return -1;
     }
 
-    // A utility method to apply an operator 'op' on operands 'a' and 'b'
+    // A utility method to apply an operator 'op' on operands 'a' and 'b' 
     private static String applyOp(char op, String a, String b) {
         String result = "t" + tempCount++;
         System.out.println(result + " = " + a + " " + op + " " + b);
         return result;
     }
+    
 
     // Function that converts infix expression to three address code
     public static void infixToTAC(String exp) {
