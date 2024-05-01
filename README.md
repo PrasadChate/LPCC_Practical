@@ -1,7 +1,7 @@
 # LPCC_Practice
 [Click Here to Run Java Codes on GDB Compiler](https://onlinegdb.com/kDMiqPpgx)
 
-# To Run the lex files A(8), A(9), D(9), E(9) Run the following commands -
+## To Run the lex files A(8), A(9), D(9), E(9) Run the following commands -
 ```
 $ flex file_name.l
 $ gcc lex.yy.c
